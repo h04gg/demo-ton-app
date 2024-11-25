@@ -1,5 +1,6 @@
 import { TonConnectUIProvider } from "@tonconnect/ui-react";
 import "./App.css";
+import { Landing } from "./component/Lading/Landing";
 import { Header } from "./layout/header/header";
 
 function App() {
@@ -133,6 +134,7 @@ function App() {
     >
       <div className="App">
         <Header />
+        <Landing />
       </div>
     </TonConnectUIProvider>
   );
