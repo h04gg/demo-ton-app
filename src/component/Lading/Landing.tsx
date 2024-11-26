@@ -14,7 +14,7 @@ export const Landing = () => {
     messages: [
       {
         address: address,
-        amount: amount,
+        amount: (Number(amount) * 1e9).toString(),
       },
     ],
   };
@@ -88,7 +88,6 @@ export const Landing = () => {
             isButtonDisabled ? "cursor-not-allowed" : "cursor-pointer"
           }`}
           onClick={handleSendTransaction}
-          //   onClick={() => tonConnectUI.sendTransaction(transaction)}
           disabled={isButtonDisabled}
         >
           Send transaction
